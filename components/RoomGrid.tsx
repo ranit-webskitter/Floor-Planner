@@ -17,7 +17,7 @@ const RoomGrid: React.FC<RoomGridProps> = ({ room, onCellClick }) => {
       <h3>Room: {room.name}</h3>
       <Grid container spacing={1}>
         {Array.from({ length: calculateTotalCells(room) }, (_, index) => (
-          <Grid item xs={4} xl={12 / room.column} key={index}>
+          <Grid item xs={6} xl={12 / room.column} key={index}>
             <Paper
               className={`cell ${room.occupiedCells.includes(index) ? 'occupied' : ''}`}
               onClick={() => onCellClick(index)}

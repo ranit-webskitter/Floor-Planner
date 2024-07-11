@@ -15,7 +15,7 @@ const RoomList: React.FC<RoomListProps> = ({ rooms, onSelectRoom }) => {
       <Grid container spacing={2}>
      
       {rooms.map((room,index) => (
-        <Grid item xs={4} xl={3} key={index}>
+        <Grid item xs={12} md={4} xl={3} key={index}>
         <Paper
           key={room.name}
           onClick={() => onSelectRoom(room)}

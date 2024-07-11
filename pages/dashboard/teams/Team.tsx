@@ -28,7 +28,7 @@ const Teams: React.FC = () => {
           <Grid item xs={12} md={8} xl={8}>
             <Grid container spacing={2}>
               {teams?.map(team => (
-                <Grid item xs={6} key={team.id}>
+                <Grid item xs={12} md={6}  key={team.id}>
                   <Card sx={{ maxWidth: 300 }}>
                     <CardActionArea>
                       <CardMedia
